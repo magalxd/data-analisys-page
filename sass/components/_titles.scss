@@ -1,0 +1,9 @@
+.section-title{
+    @include title-font;
+}
+.section-subtitle{
+    @include subtitle-font;
+}
+.highlight-text{
+    color: var(--base);
+  }
