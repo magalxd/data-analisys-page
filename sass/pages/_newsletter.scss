@@ -37,11 +37,18 @@
       border: none;
       border-radius: 5px;
       padding: toRem(18) toRem(132) toRem(18) toRem(16);
+      transform: translateX(toRem(10));
+      z-index: 10;
+      
+      &:focus{
+        outline: none;
+      }
     }
     .btn{
-      padding: toRem(18) toRem(32);
+      padding: toRem(18) toRem(25);
       position: absolute;
-     
+      transform: translateX(toRem(-60));
+      
     }
   }
   .newsletter-info{

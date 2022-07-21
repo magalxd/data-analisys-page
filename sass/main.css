@@ -99,6 +99,7 @@ body {
   background: var(--base);
   color: var(--support);
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .btn.-outline {
   background: transparent;
@@ -151,6 +152,73 @@ button {
 
 .highlight-text {
   color: var(--base);
+}
+
+.ending .foot-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.875rem;
+}
+.ending .foot-head .arshakir .foot-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 2rem;
+  color: var(--base);
+}
+.ending .foot-head .socials .social-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.page-link {
+  display: flex;
+  margin-bottom: 6.5rem;
+  gap: 12.5rem;
+}
+.page-link .footer-list {
+  width: 25%;
+  flex-direction: column;
+  list-style-type: none;
+  display: block;
+}
+.page-link .footer-list .footer-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #FFF;
+  margin-bottom: 1.5625rem;
+}
+.page-link .footer-list .footer-item {
+  font-family: "Inter";
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #FFF;
+  text-decoration: none;
+}
+.page-link .footer-list .footer-item:hover {
+  opacity: 0.7;
+}
+
+.policy {
+  margin-bottom: 6.1875rem;
+}
+.policy .terms-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.125rem;
+}
+.policy .terms-list .terms-item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #8D8D8D;
 }
 
 .landing-page {
@@ -557,10 +625,16 @@ button {
   border: none;
   border-radius: 5px;
   padding: 1.125rem 8.25rem 1.125rem 1rem;
+  transform: translateX(0.625rem);
+  z-index: 10;
+}
+.newsletter .sign-in .email:focus {
+  outline: none;
 }
 .newsletter .sign-in .btn {
-  padding: 1.125rem 2rem;
+  padding: 1.125rem 1.5625rem;
   position: absolute;
+  transform: translateX(-3.75rem);
 }
 .newsletter .newsletter-info {
   margin-bottom: 3.25rem;
