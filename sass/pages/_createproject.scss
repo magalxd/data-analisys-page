@@ -1,0 +1,37 @@
+.create-project{
+  padding-bottom: toRem(379);
+  background-image: url("../../svg/cowboyhat.svg");
+  background-position: center;
+  margin-bottom: toRem(83);
+  
+  
+  .centralizer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: toRem(46);
+    
+  }
+
+  .btn-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn{
+      padding: toRem(17) toRem(31);
+    }
+  }
+}
+
+@media(max-width:768px){
+  .create-project{
+    background-image: none;
+    padding-bottom: toRem(100);
+    .btn-area{
+      .btn{
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.info{
+  display: flex;
+  gap: toRem(85);
+  margin-bottom: toRem(196);
+  .online-info{
+    .seventh{
+      margin-bottom: toRem(32);
+      font-size: toRem(26);
+      line-height: toRem(32);
+    }
+    .seventh-subtitle{
+      margin-bottom: toRem(66);
+      }
+    
+    .features{
+      display: flex;
+      gap: toRem(64);
+      
+      align-items: center;
+      .feat{
+        .icon{
+          margin-bottom: toRem(16);
+        }
+        .feat-title{
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 15px;
+          color: var(--secondary);
+          line-height: toRem(18);
+          margin-bottom: toRem(8);
+        }
+        .feat-subtitle{
+          font-family: $gilroy;
+          font-size: toRem(15px);
+          line-height: toRem(20);
+          color: var((--primary));
+        }
+      }
+    }
+    }
+  }
+
+
+@media(max-width:768px){
+  .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    .online-info{
+      .features{
+        flex-direction: column;
+      }
+    }
+    .board-stack{
+      display: none;
+    }
+  }
+}

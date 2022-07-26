@@ -1,0 +1,52 @@
+.business-trafic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ .traffic{
+  flex-direction: column;
+  margin-bottom: toRem(250);
+  gap: toRem(58);
+
+  .third{
+    margin-bottom: toRem(32);
+    width: 85%;
+  }
+  .sub-third{
+    margin-bottom: toRem(43);
+    display: flex;
+    justify-content: flex-start
+  }
+  .btn{
+    padding: toRem(14) toRem(30.5);
+  }
+
+ }
+
+ .graphics{
+  .stack{
+    position: relative;
+    bottom: toRem(60)
+  }
+ }
+}
+
+@media(max-width:768px){
+  .business-trafic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    .graphics{
+      display: none;
+    }
+    .third{
+      width: 100% !important;
+    }
+    .btn{
+      width: 90%;
+    }
+  }
+}

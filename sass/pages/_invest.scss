@@ -1,0 +1,44 @@
+.invest{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: toRem(190);
+  
+  .divisor{
+    flex-direction: column;
+
+    .sixth{
+      margin-bottom: toRem(32);
+    }
+    .sub-sixth{
+      margin-bottom: toRem(46);
+    }
+    .btn{
+      padding: toRem(17) toRem(30);
+    }
+  }
+  .statistics{
+    background-image: url("../../svg/bitmap.svg");
+    background-repeat: no-repeat;
+    overflow: visible;
+    padding-left: toRem(57);
+    
+  }
+}
+
+@media(max-width:768px){
+  .invest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    .btn{
+      width: 90%;
+    }
+    .statistics{
+      background-image: none;
+      display: none;
+    }
+  }
+}

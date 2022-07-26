@@ -1,0 +1,35 @@
+.btn{
+    border: none;
+    background: var(--base);
+    color: var(--support);
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &.-outline{
+        background: transparent;
+        border: 1px solid var(--base);
+        color: var(--base);
+    }
+    
+    
+    &:hover{
+        background: orange;
+        color: var(--support);
+        transition: all .2s ;
+    }
+
+    
+}
+
+button{
+    font-family: 'Rubik';
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.section-title{
+    @include title-font;
+}
+.section-subtitle{
+    @include subtitle-font;
+}

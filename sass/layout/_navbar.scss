@@ -1,0 +1,66 @@
+.header {
+    margin-top: toRem(79);
+    margin-bottom: toRem(135);
+    @include space-between;
+    @include vertical-center;
+
+    .left{
+        @include vertical-center;
+        gap: toRem(44);
+
+        .navbar {
+            display: flex;
+            align-items: center;
+                  
+            .nav-list{
+                gap: 1rem;
+                display: flex;
+    
+                .nav-item{
+                    letter-spacing: 2px;
+                    .nav-link{
+                        color: var(--text);
+                        text-decoration: none;
+                        font-family: $gilroy;
+                        &:hover{
+                            color: var(--support);
+                            transition: color .2s;
+                        }
+                    }
+                }   
+                
+            }
+        }
+    }
+
+    .right {
+        .nav-btn{
+            display: flex;
+            
+        }
+    }
+
+}
+
+.nav-btn{
+    gap:toRem(20);
+    button{
+        
+        padding: toRem(8) toRem(28);
+        
+    }
+    
+}
+
+@media(max-width: 768px){
+
+    
+    .nav-list{
+        display: none !important;
+    }
+    .nav-btn{
+        .btn{
+            visibility: hidden;
+        }
+    }
+}

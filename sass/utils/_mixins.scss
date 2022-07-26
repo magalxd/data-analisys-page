@@ -1,0 +1,55 @@
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+@mixin vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin horizontal-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin rubik-normal{
+            font-family: 'Rubik';
+            font-weight: 400;
+}
+
+@mixin title-font{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: toRem(42);
+    line-height: toRem(50);
+    color: var(--secondary);
+}
+
+@mixin subtitle-font{
+    font-family: $gilroy;
+    font-weight: 400;
+    font-size: toRem(16);
+    line-height: toRem(22);
+    color: var(--primary);
+}
+
+@mixin box-title{
+    font-family: $gilroy-bold;
+    font-size: toRem(18);
+    line-height: toRem(22);
+    color: var(--secondary)
+}
+
+@mixin box-paragraph{
+    font-family: $gilroy;
+    font-weight: 400;
+    font-size: toRem(14);
+    line-height: toRem(22);
+    color: var(--primary);
+}

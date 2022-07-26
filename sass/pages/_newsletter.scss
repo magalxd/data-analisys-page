@@ -1,0 +1,72 @@
+.newsletter{
+  background: #3C3E7D30;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: toRem(185);
+
+  .eighth{
+    padding-top: toRem(50);
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: toRem(36);
+    line-height: toRem(43);
+    color: var(--base);
+    margin-bottom: toRem(20);
+  }
+  .sub-eighth{
+    @include rubik-normal;
+    font-size: toRem(16);
+    line-height: toRem(22);
+    text-align: center;
+    width: 50%;
+    color: var(--primary);
+  }
+  .space{
+    margin-bottom: toRem(23);
+  }
+  .sign-in{
+    position: relative;
+    display: inline;
+    margin-bottom: toRem(16);
+    .email{
+      background: #F6F6F6;
+      opacity: 0.1;
+      border: none;
+      border-radius: 5px;
+      padding: toRem(18) toRem(132) toRem(18) toRem(16);
+      transform: translateX(toRem(10));
+      z-index: 10;
+      
+      &:focus{
+        outline: none;
+      }
+    }
+    .btn{
+      padding: toRem(18) toRem(25);
+      position: absolute;
+      transform: translateX(toRem(-60));
+      
+    }
+  }
+  .newsletter-info{
+    margin-bottom: toRem(52);
+  }
+}
+
+@media(max-width:768px){
+  .newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .sign-in{
+      .btn{
+        transform: translateX(toRem(-75));
+      }
+    }
+  }
+}

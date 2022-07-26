@@ -1,0 +1,146 @@
+
+.landing-page{
+    display: flex;
+    background-image: url("../../svg/running-man.svg");
+    background-repeat: no-repeat;
+    
+    overflow: visible;
+    
+    background-position-x: toRem(650);
+
+    .wrapper{
+       
+        .phrase{
+             width: 45%;
+            .title{
+                font-family: 'Inter';
+                font-weight: 700;
+                font-size: toRem(44);
+                line-height: toRem(50);
+                color: var(--secondary);
+                margin-bottom: toRem(19);
+            }
+
+            .sub-title{
+                width: 85%;
+                font-family: $gilroy;
+                font-size: toRem(18);
+                line-height: toRem(22);
+                color: var(--primary);
+                margin-bottom: toRem(40);
+            }
+        }
+
+        
+    }
+}
+
+.btn-info{
+    display: flex;
+    gap: toRem(20);
+    margin-bottom: toRem(60);
+   .btn{
+    padding: toRem(13) toRem(31);
+    &.-outline{
+        padding: toRem(13) toRem(58);
+       }
+   }
+  
+}
+
+.vid-area{
+    display: flex;
+    
+    gap: toRem(20);
+    .vid{
+        .play-btn{
+            padding: toRem(20) toRem(50);
+            background: $video;
+            border-radius: 4px;
+        }
+    }
+
+    .vid-text{
+        margin-bottom: toRem(107);
+        .desc{
+            @include rubik-normal;
+            font-size: toRem(16);
+            line-height: toRem(22);
+            
+            margin-bottom: toRem(6);
+            color: var(--primary);
+        }
+       
+            
+            .vid-link{
+                text-decoration: none;
+                @include rubik-normal;
+                font-size: toRem(14);
+                line-height: toRem(22);
+                color: #6D6D78;
+                &:hover{
+                    color: var(--primary);
+                    transition: color 0.2s;
+                }
+            }
+        }
+    }
+
+
+.sponsors{
+        .sponsor-list{
+            display: flex;
+            align-items: center;
+            margin-bottom: toRem(220);
+            justify-content: center;
+            gap: toRem(74);
+            flex-wrap: wrap;
+            .sponsor-item{
+                .sponsor{
+                    opacity: 0.3;
+                    &:hover{
+                        opacity: 1;
+                        transition: opacity .2s;
+                    }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    
+    .wrapper{
+        width: 100% !important;
+        .phrase{
+            width: 100% !important;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    }
+    .sponsors{
+        .sponsor-list{
+            .sponsor-item{
+                opacity: 1 !important;
+            }
+            
+        }
+    }
+
+   .btn-info{
+    flex-direction: column;
+   }
+
+   .vid-area{
+    flex-direction: column;
+    .vid{
+        width: 100%;
+        .play-btn{
+            width: 90%;
+            height: toRem(150);
+        }
+    }
+   }
+    
+}

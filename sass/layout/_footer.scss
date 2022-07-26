@@ -1,0 +1,88 @@
+.ending{
+  .foot-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: toRem(94);
+    .arshakir{
+      .foot-title{
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: toRem(26);
+        line-height: toRem(32);
+        color: var(--base);
+      }
+    }
+    
+    .socials{
+      .social-list{
+        display: flex;
+        gap: toRem(16);
+        .social-icon{
+          &:hover{
+            opacity: 0.3;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+.page-link{
+  display: flex;
+  margin-bottom: toRem(104);
+  
+  gap: toRem(200);
+  .footer-list{
+    width: 25%;
+    flex-direction: column;
+    list-style-type: none;
+    display: block;
+    .footer-title{
+      font-family: "Inter";
+      font-weight: 700;
+      font-size: toRem(15);
+      line-height: toRem(18);
+      color: #FFF;
+      margin-bottom: toRem(25);
+    }
+
+    .footer-item{
+      font-family: "Inter";
+      font-size: toRem(15);
+      line-height: toRem(20);
+      font-weight: 400;
+      margin-bottom: toRem(16);
+      color: #FFF;
+      text-decoration: none;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.policy{
+  margin-bottom: toRem(99);
+  .terms-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(34);
+    .terms-item{
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: toRem(14);
+      line-height: toRem(20);
+      color: #8D8D8D;
+    }
+  }
+}
+
+@media(max-width:768px){
+  
+  .footer-list{
+    display: none !important;
+  }
+}
