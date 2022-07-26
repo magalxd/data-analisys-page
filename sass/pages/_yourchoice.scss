@@ -28,16 +28,21 @@
         gap: toRem(50);
         .box-content{
             width: 26%;
-            .box-title{
+            >.title{
                 display: flex;
                 align-items: center;
                 gap: toRem(27);
                 margin-bottom: toRem(10);
                 @include box-title
             }
-            .box-desc{
+            >.description{
                 margin-left: toRem(51);
                 @include box-paragraph
+            }
+            >.icon{
+                height: 24px;
+                width: 24px;
+                object-fit: cover;
             }
         }
     }

@@ -32,7 +32,7 @@
       flex-direction: column;
       width: 33%;
       
-      .box-item{
+      >.title{
         font-family: "Inter";
         font-weight: 700;
         font-size: toRem(36);
@@ -42,7 +42,7 @@
         justify-content: center;
         margin-bottom: toRem(16);
       }
-      .sub-item{
+      >.description{
         font-family: $gilroy;
         font-size: toRem(15);
         line-height: toRem(20);
